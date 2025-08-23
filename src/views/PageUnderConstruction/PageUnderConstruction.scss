@@ -1,0 +1,24 @@
+
+.under-construction-container {
+  @apply flex flex-col items-center justify-center min-h-screen bg-gray-100 text-center p-6;
+}
+
+.heading {
+  @apply text-3xl md:text-4xl font-bold text-gray-800 mb-4;
+}
+
+.sub-text {
+  @apply text-gray-600 mb-6 max-w-lg;
+}
+
+.button-group {
+  @apply flex gap-4;
+}
+
+.btn {
+  @apply bg-blue-600 text-white px-5 py-2 rounded-lg shadow-md hover:bg-red-700 transition duration-300;
+}
+
+*{
+  border: 1px solid red;
+}
