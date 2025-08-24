@@ -1,17 +1,16 @@
 // AboutSection.tsx
 import React from "react";
 
-const AboutSection: React.FC = ()=> {
-    
+const AboutSection: React.FC = () => {
   return (
     <section className="bg-gray-50 py-16">
       <div className="max-w-4xl mx-auto text-center px-4">
         <h2 className="text-3xl font-bold mb-4">
-          About <span className="text-blue-600">Samniya</span>
+          About <span className="text-blue-600">Sagnas</span>
         </h2>
         <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
         <p className="text-gray-700 text-justify">
-          Samniya is an initiation form like-minded technology experts from all
+          Sagnas is an initiation form like-minded technology experts from all
           the major industry segments to support our customers with expert
           solutions. We extend our support to industries like Aerospace,
           Automotive, Railways, Industrial Automation, and IT Industries. We

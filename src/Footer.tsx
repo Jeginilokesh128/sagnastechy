@@ -14,12 +14,13 @@ interface FooterProps {
   address: string;
   email: string;
   phone: string;
-  socialLinks: { href: string; icon: string }[];
+  socialLinks?: { href: string; icon: React.ReactNode }[];
 }
 
+
 const ContactInfo: React.FC<FooterProps> = ({
-  logoSrc,
-  logoAlt,
+  // logoSrc,
+  // logoAlt,
   companyName,
   address,
   email,
@@ -36,9 +37,9 @@ const ContactInfo: React.FC<FooterProps> = ({
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Logo & Contact */}
         <div className="flex flex-col space-y-4">
-          <div className="flex items-center space-x-3">
+          {/* <div className="flex items-center space-x-3">
             <img src={logoSrc} alt={logoAlt} className="h-12 w-auto" />
-          </div>
+          </div> */}
           <ul className="space-y-2 text-sm text-gray-200 list-disc list-inside">
             <li>📍 {address}</li>
             <li>
@@ -69,12 +70,12 @@ const ContactInfo: React.FC<FooterProps> = ({
               className="flex-1 p-2 rounded-l-md text-gray-900 focus:outline-none"
             />
             <button className="bg-blue-600 text-white px-4 rounded-r-md hover:bg-blue-700 transition">
-              → Subscribe
+              Subscribe
             </button>
           </div>
         </div>
 
-        {/* Social Media */}
+        {/* Social Media */} 
         <div className="flex flex-col items-center space-y-3">
           <h3 className="text-xl font-semibold">Follow Us</h3>
           <p className="text-sm text-gray-300">Let us be social</p>
@@ -85,9 +86,10 @@ const ContactInfo: React.FC<FooterProps> = ({
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-blue-400 transition  w-[16px] justify-center"
-                dangerouslySetInnerHTML={{ __html: link.icon }}
-              />
+                className="hover:text-blue-400 transition flex items-center justify-center"
+              >
+                {link.icon}
+              </a>
             ))}
           </div>
         </div>

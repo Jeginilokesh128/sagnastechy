@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./PageUnderConstruction.scss";
 
-
 const PageUnderConstruction: React.FC = () => {
   const navigate = useNavigate();
 
@@ -14,11 +13,11 @@ const PageUnderConstruction: React.FC = () => {
       </p>
 
       <div className="button-group">
-        <button className="btn1" onClick={() => navigate("/")}>
+        {/* <button className="btn1" onClick={() => navigate("/")}>
           Home
-        </button>
-        <button className="btn" onClick={() => navigate("/about")}>
-          About Us
+        </button> */}
+        <button className="btn" onClick={() => navigate("/")}>
+          Back to Home
         </button>
       </div>
     </div>

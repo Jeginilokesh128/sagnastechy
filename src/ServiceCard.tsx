@@ -6,22 +6,22 @@ const services = [
   {
     icon: <FaLaptop size={40} className="text-gray-500" />,
     title: "Software Engineering",
-    description: "SAMNIYA provides software engineering support services",
+    description: "Sagnas provides software engineering support services",
   },
   {
     icon: <FaCloud size={40} className="text-gray-500" />,
     title: "Digital & IOT Services",
-    description: "SAMNIYA provides digital and IoT services",
+    description: "Sagnas provides digital and IoT services",
   },
   {
     icon: <FaCog size={40} className="text-gray-500" />,
     title: "Embedded Engineering",
-    description: "SAMNIYA provides embedded engineering services",
+    description: "Sagnas provides embedded engineering services",
   },
   {
     icon: <FaRandom size={40} className="text-gray-500" />,
     title: "Wire Harness Engineering",
-    description: "SAMNIYA provides wire harness engineering",
+    description: "Sagnas provides wire harness engineering",
   },
 ];
 
@@ -32,7 +32,7 @@ const ServicesSection: React.FC = () => {
         Our <span className="text-blue-600">Services</span>
       </h2>
       <p className="text-center text-gray-600 mt-2 mb-12">
-        SAMNIYA involved in executing wide variety of services
+        Sagnas involved in executing wide variety of services
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">

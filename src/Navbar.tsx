@@ -98,9 +98,20 @@ const Navbar: React.FC<NavbarProps> = ({ toggled }) => {
           </li>
         ))}
       </ul>
-      <ul className="flex space-x-4 px-8 py-2 font-semibold text-black ml-auto items-center">
-        <li>call:+91-9900932214 </li>
-        <li>info@samniyatechsys.com</li>
+      <ul className="list-dis flex space-x-4 px-8 py-2 font-semibold text-black ml-auto items-center">
+        <li className="inline mr-4">
+          📞{" "}
+          <a href="tel:+919900932214" className="hover:text-blue-400">
+            +91-9900932214
+          </a>
+        </li>
+        <a
+          href="mailto:info@Sagnastechsys.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📧 info@Sagnastechsys.com
+        </a>
       </ul>
     </nav>
   );

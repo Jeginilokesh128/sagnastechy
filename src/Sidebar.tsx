@@ -55,7 +55,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({
           className={
             isSubMenuActive(item.children)
               ? "bg-slate-700 text-white"
-              : "text-slate-300 hover:bg-slate-700 hover:text-white"
+              : "text-slate-300"
           }
         >
           {renderMenuItems(item.children)}
@@ -66,9 +66,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({
           icon={item.icon}
           suffix={item.suffix}
           onClick={() => item.path && navigate(item.path)}
-          className={
-             "text-slate-300 hover:bg-slate-700 hover:text-white"
-          }
+          className="text-slate-300"
         >
           {item.label}
         </MenuItem>
@@ -90,15 +88,22 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({
         [`.${menuClasses.subMenuContent}`]: {
           backgroundColor: "#191e4d !important",
         },
+        // ✅ Hover background fix
+        [`.${menuClasses.button}`]: {
+          "&:hover": {
+            backgroundColor: "#244ea2 !important",
+            color: "white !important",
+          },
+        },
       }}
     >
       {/* Header */}
       <div className="flex items-center justify-between p-4">
-        {!collapsed && <h2 className="text-lg font-bold">Sagnas Tecjy</h2>}
+        {!collapsed && <h2 className="text-lg font-bold">Sagnas Techy</h2>}
         <button
-          onClick={() =>{
-           setToggled?.(!collapsed); // safe
-           setCollapsed(!collapsed);
+          onClick={() => {
+            setToggled?.(!collapsed); // safe
+            setCollapsed(!collapsed);
           }}
           className="text-white text-sm px-2 py-1 rounded bg-slate-600"
         >
@@ -106,15 +111,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({
         </button>
       </div>
 
-      {/* Menu */}
       <Menu>{renderMenuItems(menuItems)}</Menu>
-
-      {/* Footer */}
-      {/* <div className="p-4 mt-auto">
-        <button className="w-full rounded-lg bg-gradient-to-r from-blue-400 to-blue-600 py-2 text-white font-semibold">
-          View Code
-        </button>
-      </div> */}
     </Sidebar>
   );
 };
