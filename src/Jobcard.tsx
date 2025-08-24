@@ -1,6 +1,13 @@
 // JobCard.tsx
 import React from "react";
-import { Job } from "./Job";
+
+interface Job {
+  id: string;
+  title: string;
+  skills?: string;
+  experience?: string;
+  location?: string;
+}
 
 interface JobCardProps {
   job: Job;
