@@ -45,9 +45,9 @@ const contactInfo = {
   companyName: "Saminya",
   slogan: "Innovative Insights in Progress",
   address:
-   "SK Lane, Chickmavalli, Bangalore – 560004, Karnataka, India",
-  email: "info@saminyatechsyst.com",
-  phone: "+91-9900932214",
+   "1-9, SK Lane, Chikkamavalli, Bangalore – 560004, Karnataka, India",
+  email: "Info@sagnas.com",
+  phone: "+91-9182902023",
   socialLinks: socialIcons,
 };
 

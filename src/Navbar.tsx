@@ -102,7 +102,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggled }) => {
         <li className="inline mr-4">
           📞{" "}
           <a href="tel:+919900932214" className="hover:text-blue-400">
-            +91-9900932214
+            +91-9182902023
           </a>
         </li>
         <a
@@ -110,7 +110,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggled }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          📧 info@Sagnastechsys.com
+          📧 Info@sagnas.com
         </a>
       </ul>
     </nav>
