@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://sagnas.com/sitemap.xml
+Sitemap: https://www.sagnas.com/sitemap.xml

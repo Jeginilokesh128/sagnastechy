@@ -99,7 +99,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({
     >
       {/* Header */}
       <div className="flex items-center justify-between p-4">
-        {!collapsed && <h2 className="text-lg font-bold">Sagnas Techy</h2>}
+        {!collapsed && <h2 className="text-lg font-bold">Sagnas</h2>}
         <button
           onClick={() => {
             setToggled?.(!collapsed); // safe

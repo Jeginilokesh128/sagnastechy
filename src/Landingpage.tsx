@@ -45,7 +45,7 @@ const contactInfo = {
   companyName: "Saminya",
   slogan: "Innovative Insights in Progress",
   address:
-    "Building No. 12, First Floor, 3rd Cross, Patel Narayana Reddy Layout, 6th Block, Koramangala, Bangalore-560103",
+   "SK Lane, Chickmavalli, Bangalore – 560004, Karnataka, India",
   email: "info@saminyatechsyst.com",
   phone: "+91-9900932214",
   socialLinks: socialIcons,
